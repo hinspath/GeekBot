@@ -8,8 +8,7 @@ class Plugin extends Bot {
     super();
   }
   async run () {
-    var time= new Date().Format('M/d h:m:s');
-    const now = time.setHours(time.getHours() + 8);
+    const now= new Date().Format('M/d h:m:s');
     await this.sendImage('assets/geekbot.png');
     // 发送环境配置信息
     const CONF_DATA = `
