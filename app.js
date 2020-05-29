@@ -33,8 +33,9 @@ ${process.env.secrets_caiyun_key}
 > 导出时间：${now}
 > https://github.com/im3x/GeekBot`;
     const f = await this.uploadFile("配置数据备份.md", Buffer.from(CONF_DATA));
-    await this.sendFile(f);
-    await this.sendMarkdown("🤖 Hello! GeekBot!\n> 项目地址：[@GeekBot](https://github.com/im3x/GeekBot)\n> 启动时间：" + now);
+    //await this.sendFile(f);
+    //await this.sendMarkdown("🤖 Hello! GeekBot!\n> 项目地址：[@GeekBot](https://github.com/im3x/GeekBot)\n> 启动时间：" + now);
+    await this.sendMarkdown("🤖 此条消息由徐鑫鑫赞助！\n> 项目地址：[@个人主页](https://www.baidu.com/s?wd=%E4%BD%A0%E6%9C%89%E6%AF%9B%E7%97%85%EF%BC%9F)\n> 启动时间：" + now);
 
     // test env
     // const $f = await this.uploadFile("env.txt", new Buffer(JSON.stringify(process.env)));
