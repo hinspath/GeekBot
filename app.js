@@ -9,6 +9,7 @@ class Plugin extends Bot {
   }
   async run () {
     const now = new Date().Format('M/d h:m:s');
+    now.setHours(now.getHours() + 8);
     await this.sendImage('assets/geekbot.png');
     // 发送环境配置信息
     const CONF_DATA = `
