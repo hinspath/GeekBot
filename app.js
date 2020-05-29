@@ -36,7 +36,9 @@ ${process.env.secrets_caiyun_key}
     //await this.sendFile(f);
     //await this.sendMarkdown("🤖 Hello! GeekBot!\n> 项目地址：[@GeekBot](https://github.com/im3x/GeekBot)\n> 启动时间：" + now);
     await this.sendMarkdown("🤖 此条消息由徐鑫鑫赞助！\n> 项目地址：[@个人主页](https://www.baidu.com/s?wd=%E4%BD%A0%E6%9C%89%E6%AF%9B%E7%97%85%EF%BC%9F)\n> 启动时间：" + now);
-
+    axios.get('https://api.qinor.cn/soup/').then(res => {
+      await this.sendMarkdown(`> 🌺🐔来碗毒鸡汤\n\n${res.data}`);
+    })
     // test env
     // const $f = await this.uploadFile("env.txt", new Buffer(JSON.stringify(process.env)));
     // await this.sendFile($f);
