@@ -1,6 +1,6 @@
 const Bot = require('./modules/bot');
 const process = require('process');
-const axios = require('axios').default;
+const axios = require('axios');
 
 require('./modules/date-format');
 
