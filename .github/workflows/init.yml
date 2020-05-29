@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '12'
       - run: npm install
-      - run: npm install moment
+      - run: npm install axios
       - run: npm start
         env:
           bot_api: ${{ secrets.bot_api }}
